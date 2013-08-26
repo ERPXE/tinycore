@@ -1,0 +1,5 @@
+.:
+core.gz
+filelist.txt
+tinycore.menu
+vmlinuz
