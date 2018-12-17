@@ -1,8 +1,9 @@
-LABEL TINYCOREPLUSLINUX
-MENU LABEL ^Tiny Core 4.2.1.1
-KERNEL er/plugins/tinycore/vmlinuz
-INITRD er/plugins/tinycore/core.gz
-APPEND nfsmount=10.0.0.1:/tftpboot/er/shares/tinycore/ tce=nfs/cde
-TEXT HELP
-                 Tiny Core Linux
-ENDTEXT
+MENU BEGIN TCLLINUX
+MENU TITLE TINYCORELINUX 9.0.0
+MENU LABEL ^Tiny Core Linux 9.0.0
+
+MENU INCLUDE er/plugins/tinycore/tinycoremain.menu
+
+# ------====> Back <====------
+MENU INCLUDE er/menu/shared/menu-back.module
+MENU END

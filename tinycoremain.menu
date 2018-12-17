@@ -1,0 +1,24 @@
+LABEL CORELINUX
+MENU LABEL ^Core 9.0.0
+KERNEL er/plugins/tinycore/vmlinuz
+INITRD er/plugins/tinycore/core.gz
+APPEND loglevel=3 base
+TEXT HELP
+                 Core Linux
+ENDTEXT
+LABEL TINYCORELINUX
+MENU LABEL ^Tiny Core 9.0.0
+KERNEL er/plugins/tinycore/vmlinuz
+INITRD er/plugins/tinycore/core.gz
+APPEND nfsmount=10.0.0.1:/tftpboot/er/shares/tinycore/ tce=nfs/cde loglevel=3 showapps lst=xibase.lst desktop=flwm_topside
+TEXT HELP
+                 Tiny Core Linux
+ENDTEXT
+LABEL TINYCOREPLUSLINUX
+MENU LABEL ^Tiny Core Plus 9.0.0
+KERNEL er/plugins/tinycore/vmlinuz
+INITRD er/plugins/tinycore/core.gz
+APPEND nfsmount=10.0.0.1:/tftpboot/er/shares/tinycore/ tce=nfs/cde showapps desktop=flwm_topside
+TEXT HELP
+                 Tiny Core Plus Linux
+ENDTEXT
